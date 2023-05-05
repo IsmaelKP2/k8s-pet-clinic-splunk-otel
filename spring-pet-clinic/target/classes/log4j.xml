@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+      <Console name="STDOUT" target="SYSTEM_OUT">
+         <JsonLayout compact="true" eventEol="true">
+            <KeyValuePair key="trace_id" value="${ctx:trace_id}"/>
+            <KeyValuePair key="span_id" value="${ctx:span_id}"/>
+	    <KeyValuePair key="service.name" value="${sys:otel.resource.service.name}"/>
+	    <KeyValuePair key="deployment.environment" value="${sys:otel.resource.deployment.environment}"/>
+            <KeyValuePair key="trace_sampled" value="${ctx:trace_flags}"/>
+       </JsonLayout>
+      <PatternLayout>
+         <pattern>
+        %d %p %C{1.} [%t] %m%n service.name=${sys:otel.resource.service.name}, deployment.environment=${sys:otel.resource.deployment.environment}
+         </pattern>
+       </PatternLayout>
+       </Console>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout
+                pattern="%style{%d{ISO8601}}{black} %highlight{%-5level }[%style{%t}{bright,blue}] %style{%C{1.}}{bright,yellow}: %msg%n%throwable " />
+        </Console>
+
+        <RollingFile name="RollingFile"
+            fileName="./logs/spring-boot-logger-log4j2.log"
+            filePattern="./logs/$${date:yyyy-MM}/spring-boot-logger-log4j2-%d{-dd-MMMM-yyyy}-%i.log.gz">
+            <PatternLayout>
+                <pattern>%d %p %C{1.} [%t] %m%n </pattern>
+            </PatternLayout>
+            <Policies>
+                <!-- rollover on startup, daily and when the file reaches 
+                    10 MegaBytes -->
+                <OnStartupTriggeringPolicy />
+                <SizeBasedTriggeringPolicy
+                    size="10 MB" />
+                <TimeBasedTriggeringPolicy />
+            </Policies>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <!-- LOG everything at TRACE level -->
+	<Root level="trace">
+	    <AppenderRef ref="STDOUT" />
+            <AppenderRef ref="Console" />
+            <AppenderRef ref="RollingFile" />
+        </Root>
+
+        <!-- LOG "com.baeldung*" at TRACE level -->
+        <Logger name="com.baeldung" level="trace"></Logger>
+    </Loggers>
+
+</Configuration>
+

@@ -1,0 +1,9 @@
+build the image
+
+./mvnw package -Dmaven.test.skip=true
+
+docker login
+
+docker build -t docker.io/ismapro/instrumented-petclinic-app:log4j  -f Dockerfile.instrumented 
+
+docker push docker.io/ismapro/instrumented-petclinic-app:log4j

@@ -1,4 +1,4 @@
-#Thu May 04 12:25:48 UTC 2023
+#Fri May 05 14:18:40 UTC 2023
 /home/ubuntu/k8s-pet-clinic-splunk-otel/spring-pet-clinic/src/main/resources/db/hsqldb/schema.sql=1679084933154
 /home/ubuntu/k8s-pet-clinic-splunk-otel/spring-pet-clinic/src/main/resources/static/resources/fonts/varela_round-webfont.ttf=1679084933194
 /home/ubuntu/k8s-pet-clinic-splunk-otel/spring-pet-clinic/src/main/resources/templates/owners/ownerDetails.html=1679084933194
@@ -7,6 +7,7 @@
 /home/ubuntu/k8s-pet-clinic-splunk-otel/spring-pet-clinic/gradlew.bat=1679084933154
 /home/ubuntu/k8s-pet-clinic-splunk-otel/spring-pet-clinic/src/main/resources/static/resources/css/petclinic.css=1679084933178
 /home/ubuntu/k8s-pet-clinic-splunk-otel/spring-pet-clinic/src/main/java/org/springframework/samples/petclinic/system/WelcomeController.java=1679084933154
+/home/ubuntu/k8s-pet-clinic-splunk-otel/spring-pet-clinic/src/main/resources/log4j.xml=1683296218520
 /home/ubuntu/k8s-pet-clinic-splunk-otel/spring-pet-clinic/src/main/scss/header.scss=1679084933194
 /home/ubuntu/k8s-pet-clinic-splunk-otel/spring-pet-clinic/src/main/resources/static/resources/fonts/montserrat-webfont.svg=1679084933178
 /home/ubuntu/k8s-pet-clinic-splunk-otel/spring-pet-clinic/src/main/resources/templates/fragments/selectField.html=1679084933194
@@ -26,6 +27,7 @@
 /home/ubuntu/k8s-pet-clinic-splunk-otel/spring-pet-clinic/src/main/resources/logback.xml=1681222664961
 /home/ubuntu/k8s-pet-clinic-splunk-otel/spring-pet-clinic/src/main/java/org/springframework/samples/petclinic/model/package-info.java=1679084933154
 /home/ubuntu/k8s-pet-clinic-splunk-otel/spring-pet-clinic/src/main/resources/templates/pets/createOrUpdateVisitForm.html=1679084933194
+/home/ubuntu/k8s-pet-clinic-splunk-otel/spring-pet-clinic/build_the_image=1683295360349
 /home/ubuntu/k8s-pet-clinic-splunk-otel/spring-pet-clinic/src/main/resources/static/resources/fonts/varela_round-webfont.eot=1679084933178
 /home/ubuntu/k8s-pet-clinic-splunk-otel/spring-pet-clinic/src/main/resources/db/h2/schema.sql=1679084933154
 /home/ubuntu/k8s-pet-clinic-splunk-otel/spring-pet-clinic/src/main/java/org/springframework/samples/petclinic/owner/OwnerRepository.java=1679084933154
@@ -82,7 +84,7 @@
 /home/ubuntu/k8s-pet-clinic-splunk-otel/spring-pet-clinic/src/main/scss/responsive.scss=1679084933194
 /home/ubuntu/k8s-pet-clinic-splunk-otel/spring-pet-clinic/src/main/java/org/springframework/samples/petclinic/model/NamedEntity.java=1679084933154
 /home/ubuntu/k8s-pet-clinic-splunk-otel/spring-pet-clinic/gradlew=1679084933154
-/home/ubuntu/k8s-pet-clinic-splunk-otel/spring-pet-clinic/src/main/resources/application.properties=1681246644856
+/home/ubuntu/k8s-pet-clinic-splunk-otel/spring-pet-clinic/src/main/resources/application.properties=1683296040562
 /home/ubuntu/k8s-pet-clinic-splunk-otel/spring-pet-clinic/src/main/resources/messages/messages_es.properties=1679084933178
 /home/ubuntu/k8s-pet-clinic-splunk-otel/spring-pet-clinic/.mvn/wrapper/maven-wrapper.jar=1679933958779
 /home/ubuntu/k8s-pet-clinic-splunk-otel/spring-pet-clinic/src/test/java/org/springframework/samples/petclinic/service/EntityUtils.java=1679084933194
@@ -95,7 +97,7 @@ configuration*?=AC7BDD60940D65EF254233E4389671140F6C9565
 /home/ubuntu/k8s-pet-clinic-splunk-otel/spring-pet-clinic/src/main/resources/templates/owners/createOrUpdateOwnerForm.html=1679084933194
 /home/ubuntu/k8s-pet-clinic-splunk-otel/spring-pet-clinic/src/main/resources/static/resources/images/spring-logo-dataflow.png=1679084933194
 /home/ubuntu/k8s-pet-clinic-splunk-otel/spring-pet-clinic/src/main/resources/application-mysql.properties=1679084933154
-/home/ubuntu/k8s-pet-clinic-splunk-otel/spring-pet-clinic/pom.xml=1683202788431
+/home/ubuntu/k8s-pet-clinic-splunk-otel/spring-pet-clinic/pom.xml=1683211005918
 /home/ubuntu/k8s-pet-clinic-splunk-otel/spring-pet-clinic/src/main/resources/db/h2/data.sql=1679084933154
 /home/ubuntu/k8s-pet-clinic-splunk-otel/spring-pet-clinic/src/main/resources/db/hsqldb/data.sql=1679084933154
 /home/ubuntu/k8s-pet-clinic-splunk-otel/spring-pet-clinic/src/main/resources/static/resources/images/spring-pivotal-logo.png=1679084933194
